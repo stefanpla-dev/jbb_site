@@ -1,0 +1,27 @@
+.section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    background-color: #f0f0f0;
+  }
+  
+  .videos {
+    background-color: #e0e0e0;
+  }
+  
+  .resume {
+    background-color: #d0d0d0;
+  }
+  
+  .contact {
+    background-color: #c0c0c0;
+  }
