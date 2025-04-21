@@ -12,16 +12,45 @@
 
 .about {
     background-color: #f0f0f0;
-  }
+}
   
-  .videos {
+.videos {
     background-color: #e0e0e0;
-  }
+}
   
-  .resume {
+.resume {
     background-color: #d0d0d0;
-  }
+}
   
-  .contact {
+.contact {
     background-color: #c0c0c0;
-  }
+}
+
+
+/* Homepage Image Styling */
+
+.homepage-image {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.landing-page-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.signature-img {
+    position: absolute;
+    bottom: 20rem;
+    right: 15rem;
+    height: 150px;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+
+
