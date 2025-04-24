@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import './Section.css';
+import '../styles/Section.css';
 import aboutImage from '../assets/brayton-1.jpg';
+import ImageCarousel from '../components/ImageCarousel';
 
 function About() {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -12,7 +13,7 @@ function About() {
   return (
     <section className={`about-section ${isExpanded ? 'expanded' : ''}`}>
       <div className="about-content">
-        <img src={aboutImage} alt="headshot" className="about-img"/>
+        <ImageCarousel />
         <div className="about-text">
           <div className={`text-wrapper ${isExpanded ? 'expanded' : ''}`}>
             <h2>Jared Brayton Bollenbacher, MV, MWS, LICSW (he/him)</h2>

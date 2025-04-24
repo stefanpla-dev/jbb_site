@@ -1,5 +1,5 @@
 import React from 'react'
-import './Section.css';
+import '../styles/Section.css';
 import image from '../assets/landing-page-image.jpg';
 import signatureImage from '../assets/brayton-signature.jpg';
 
