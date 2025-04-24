@@ -1,6 +1,5 @@
 .section {
   width: 100%;
-  min-height: 100vh;
   padding: 2rem;
   box-sizing: border-box;;
 }
@@ -20,8 +19,3 @@
 .contact {
   background-color: #cccccc;
 }
-
-/* .homepage-image {
-  background: url('') center/cover no repeat;
-  min-height: 100vh;
-} */
