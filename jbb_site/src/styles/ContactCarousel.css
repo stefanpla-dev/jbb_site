@@ -1,0 +1,35 @@
+.contact-image-carousel {
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 2px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c0c0c0 /* Optional: to fill in any gaps */
+  }
+  
+  .contact-carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.8s ease-in-out;
+  }
+
+  @keyframes fadeCarousel {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* You can add a class or use JS to loop through each image */
+.contact-carousel-image:nth-child(1) {
+    animation: fadeCarousel 8s infinite;
+}
