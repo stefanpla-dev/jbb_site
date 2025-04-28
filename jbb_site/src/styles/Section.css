@@ -54,7 +54,7 @@
 }
 
 .about-section.expanded {
-    max-height: 100vh;;
+    max-height: 400vh;;
 }
 
 .about-content {
@@ -73,7 +73,8 @@
 }
 
 .text-wrapper.expanded {
-    max-height: 500px;
+    max-height: 1200px;
+    transition: max-height 0.6s ease;
 }
 
 .extra-text {
@@ -110,16 +111,19 @@
     background-color: #333;
 }
 
+.resume-download {
+    margin-top: 1rem;
+}
+
+.resume-download a {
+    text-decoration: underline;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
 .videos {
     background-color: #e0e0e0;
-}
-  
-.resume {
-    background-color: #d0d0d0;
-}
-  
-.contact {
-    background-color: #c0c0c0;
 }
 
 
