@@ -2,7 +2,6 @@ import './App.css'
 import HomepageImage from './sections/HomepageImage';
 import About from './sections/About';
 import Videos from './sections/Videos';
-import Resumes from './sections/Resumes';
 import Contact from './sections/Contact';
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
       <HomepageImage />
       <About />
       <Videos />
-      <Resumes />
       <Contact />
     </div>
   );
