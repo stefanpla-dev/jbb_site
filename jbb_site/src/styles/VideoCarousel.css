@@ -11,11 +11,11 @@
 
 .arrow {
     font-size: 2rem;
-    background: none;
+    background: #fb4bdb;
     border: none;
     cursor: pointer;
     user-select: none;
-    color: #333;
+    color: #eeeeee;
 }
 
 .video-container {

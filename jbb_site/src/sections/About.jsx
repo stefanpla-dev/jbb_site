@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../styles/Section.css';
 import ImageCarousel from '../components/ImageCarousel';
 import resumePDF from '../assets/resume.pdf';
+import '../styles/Button.css'
 
 function About() {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -29,7 +30,7 @@ function About() {
               </a>
             </div>
           </div>
-            <button onClick={toggleExpanded} className="toggle-btn">
+            <button onClick={toggleExpanded} className="button">
               {isExpanded ? 'Show Less' : 'Show More'}
             </button>
         </div>
