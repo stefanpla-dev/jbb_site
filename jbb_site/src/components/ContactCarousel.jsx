@@ -33,7 +33,7 @@ function ContactCarousel() {
                 }
                 return prevIndex + 1;
             });
-        }, 8000);    
+        }, 6000);    
         return () => clearInterval(interval);
     }, [shuffledImages]);
 

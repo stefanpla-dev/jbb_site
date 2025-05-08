@@ -51,6 +51,7 @@
     transition: max-height 0.5s ease;
     overflow: hidden;
     max-height: 60vh;
+    background-color: rgb(167, 88, 210);
 }
 
 .about-section.expanded {
@@ -112,14 +113,14 @@
 
 
 .videos {
-    background-color: #e0e0e0;
+    background-color: rgb(183, 27, 154);
 }
 
 
 /* Contact Section Styling */
 
 .contact-section {
-    background-color: #c0c0c0;
+    background-color: rgb(167, 88, 210);
 }
 
 .contact-content {

@@ -31,5 +31,5 @@
 
 /* You can add a class or use JS to loop through each image */
 .contact-carousel-image:nth-child(1) {
-    animation: fadeCarousel 8s infinite;
+    animation: fadeCarousel 6s infinite;
 }

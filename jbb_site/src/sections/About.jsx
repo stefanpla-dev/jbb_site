@@ -17,7 +17,7 @@ function About() {
         <ImageCarousel />
         <div className="about-text">
           <div className={`text-wrapper ${isExpanded ? 'expanded' : ''}`}>
-            <h2>Jared Brayton Bollenbacher, MV, MWS, LICSW (he/him)</h2>
+            <h2>Jared Brayton Bollenbacher, MM, MSW, LICSW (he/him)</h2>
             <p>
               After leaving his dairy farm upbringing in his home state of Indiana, Brayton received a Bachelor of Music in Vocal Performance from The Ohio State University in 2006 and a Bachelor of Arts in sexualities studies in 2007, completing a thesis on How Gay Male Bias Influences the Gender Performance of Drag Queens in and out of Drag.
             </p>

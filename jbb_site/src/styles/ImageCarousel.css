@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white /* Optional: to fill in any gaps */
+    background-color: rgb(167, 88, 210) /* Optional: to fill in any gaps */
   }
   
   .carousel-image {
