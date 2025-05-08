@@ -1,5 +1,5 @@
 button {
-    --bg: #fb4bdb;
+    --bg: #000000;
     --text-color: #fff;
     position: relative;
     width: 150px;
@@ -13,7 +13,7 @@ button {
     border-radius: 5px;
     opacity: 0.8;
     letter-spacing: 1px;
-    box-shadow: #c02bac 0px 7px 2px, #000 0px 8px 5px;
+    box-shadow: #000000 0px 7px 2px, #000 0px 8px 5px;
   }
   
   button:hover {
