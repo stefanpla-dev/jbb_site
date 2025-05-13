@@ -9,34 +9,22 @@ import '../styles/ImageCarousel.css';
 
 const images = [img2, img3, img4, img5, img6, img7];
 
-function shuffleArray(array) {
-    return array
-    .map((item)=> ({item, sort: Math.random() })) // Assign random sort values
-    .sort((a,b)=> a.sort - b.sort) // Sort by those values.
-    .map(({item}) => item); // Extract shuffled item
-}
-
 
 function ImageCarousel() {
-    const [shuffledImages, setShuffledImages] = useState(shuffleArray(images))
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect (() => {
         const interval = setInterval (() => {
-            setCurrentIndex((prevIndex) => {
-                if (prevIndex === shuffledImages.length - 1) {
-                    setShuffledImages(shuffleArray(images)); //Reshuffle for next cycle
-                    return 0; //Reset index
-                }
-                return prevIndex + 1;
-            });
+            setCurrentIndex((prevIndex) => 
+                prevIndex === images.length - 1 ? 0 : prevIndex + 1
+            );
         }, 8000);    
         return () => clearInterval(interval);
-    }, [shuffledImages]);
+    }, []);
 
   return (
     <div className ="image-carousel">
-        <img src={shuffledImages[currentIndex]} className="carousel-image" />
+        <img src={images[currentIndex]} className="carousel-image" />
     </div>
   );
 }
