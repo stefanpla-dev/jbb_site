@@ -4,7 +4,7 @@ import '../styles/Section.css';
 
 function Contact() {
   return (
-    <section className="section contact">
+    <section className="contact-section">
       <div className="contact-content">
         <div className="contact-info">
           <p>jared.brayton.bollenbacher@gmail.com</p>
