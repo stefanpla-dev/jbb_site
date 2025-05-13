@@ -10,36 +10,34 @@ import img8 from '../assets/contact-8.jpg';
 import img9 from '../assets/contact-9.jpg';
 import '../styles/ContactCarousel.css';
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
-
-function shuffleArray(array) {
-    return array
-    .map((item)=> ({item, sort: Math.random() })) // Assign random sort values
-    .sort((a,b)=> a.sort - b.sort) // Sort by those values.
-    .map(({item}) => item); // Extract shuffled item
-}
-
+const images = [
+    {src: img1, title: "BANNED - Columbus Gay Men's Chorus"},
+    {src: img2, title: "Walt's Vault - Columbus Gay Men's Chorus"}, 
+    {src: img3, title: "Tales of Our Age - Columbus Gay Men's Chorus"}, 
+    {src: img4, title: "Beaus and Belles - Columbus Gay Men's Chorus"},
+    {src: img5, title: "Myths, Legends, and FairyTales - Columbus Gay Men's Chorus: VOX"},
+    {src: img6, title: "Diverse Harmony: Spectrum"}, 
+    {src: img7, title: "Diverse Harmony"},
+    {src: img8, title: "Masked - Columbus Gay Men's Chorus: VOX"},
+    {src: img9, title: "Reveille Men's Chorus"}
+]
 
 function ContactCarousel() {
-    const [shuffledImages, setShuffledImages] = useState(shuffleArray(images))
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect (() => {
         const interval = setInterval (() => {
-            setCurrentIndex((prevIndex) => {
-                if (prevIndex === shuffledImages.length - 1) {
-                    setShuffledImages(shuffleArray(images)); //Reshuffle for next cycle
-                    return 0; //Reset index
-                }
-                return prevIndex + 1;
-            });
-        }, 6000);    
+            setCurrentIndex((prevIndex) => 
+                prevIndex === images.length -1 ? 0 : prevIndex + 1
+        );
+        }, 8000);    
         return () => clearInterval(interval);
-    }, [shuffledImages]);
+    }, []);
 
   return (
     <div className ="contact-image-carousel">
-        <img src={shuffledImages[currentIndex]} className="contact-carousel-image" />
+        <p className="image-title">{images[currentIndex].title}</p>
+        <img src={images[currentIndex].src} className="contact-carousel-image" />
     </div>
   );
 }

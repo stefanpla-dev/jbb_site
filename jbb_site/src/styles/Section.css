@@ -1,14 +1,3 @@
-.section {
-    width: 100%;
-    padding: 4rem 2rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 /* Homepage Image Styling */
 
 .homepage-image {
@@ -125,30 +114,32 @@
 
 .contact-content {
     display: flex;
-    gap: 2rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 1rem;
+    padding: 2rem;
+    justify-content: flex-start;
+    justify-content: space-between;
   }
   
   .contact-info {
-    flex: 1;
+    flex: 0.0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: left;
-    line-height: 5vh;
-    padding: 1rem;
+    line-height: 10vh;
+    padding-right: 1rem;
     border-right: 2px solid #aaa;
   }
   
   .contact-carousel-wrapper {
-    flex: 2;
+    flex: 2.2;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding-left: 2rem;
   }

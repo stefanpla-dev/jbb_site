@@ -1,4 +1,3 @@
-import './App.css'
 import HomepageImage from './sections/HomepageImage';
 import About from './sections/About';
 import Videos from './sections/Videos';
