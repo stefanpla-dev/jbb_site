@@ -56,19 +56,21 @@
     flex-wrap: wrap;
 }
 
-.text-wrapper {
-    overflow: hidden;
-    max-height: 130px;
-    transition: max-height 0.6s ease;
-}
-
-.text-wrapper.expanded {
-    max-height: 1200px;
-    transition: max-height 0.6s ease;
+.first-paragraph {
+    margin-bottom: 1rem;
 }
 
 .extra-text {
-    margin-top: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+    margin-bottom: 1rem;
+}
+
+.extra-text.expanded {
+    max-height: 1200px;
+    opacity: 1;
 }
 
 .about-img {
@@ -89,17 +91,6 @@
 .toggle-btn:hover {
     background-color: #333;
 }
-
-.resume-download {
-    margin-top: 1rem;
-}
-
-.resume-download a {
-    text-decoration: underline;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
 
 .videos {
     background-color: rgb(183, 27, 154);

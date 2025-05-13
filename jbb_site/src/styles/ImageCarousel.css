@@ -1,5 +1,6 @@
 .image-carousel {
-    width: 300px;
+    width: 350px;
+    height: 400px;
     overflow: hidden;
     border-radius: 2px;
     flex-shrink: 0;
@@ -13,22 +14,4 @@
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    transition: opacity 0.8s ease-in-out;
   }
-
-  @keyframes fadeCarousel {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-/* You can add a class or use JS to loop through each image */
-.carousel-image:nth-child(1) {
-    animation: fadeCarousel 8s infinite;
-}
