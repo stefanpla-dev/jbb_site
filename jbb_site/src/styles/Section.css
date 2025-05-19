@@ -92,6 +92,98 @@
     background-color: #333;
 }
 
+/* Resume Section Styling */
+
+.resume-section {
+    background-color: #f8f8f8;
+    padding: 2rem;
+}
+
+.resume-toggle {
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline overline;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.resume-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.resume-content.expanded {
+    max-height: 3500px;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.resume-column {
+    flex: 1 1 45%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.resume-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #ccc;
+    transform: translateX(-50%);
+    margin-bottom: 0.5rem;
+}
+
+.resume-text h2 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid;
+    padding-bottom: 0.25rem;
+}
+
+.resume-text h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.resume-text p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.resume-text ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.resume-text ul li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+    line-height: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .resume-content.expanded {
+        flex-direction: column;
+    }
+
+    .resume-column {
+        flex: 1 1 100%;
+    }
+}
+
+/* Video Section Styling */
+
 .videos {
     background-color: rgb(183, 27, 154);
 }
@@ -122,7 +214,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-align: left;
-    line-height: 10vh;
+    line-height: 7vh;
     padding-right: 1rem;
     border-right: 2px solid #aaa;
   }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Section.css';
 import ImageCarousel from '../components/ImageCarousel';
-import resumePDF from '../assets/resume.pdf';
 import '../styles/Button.css'
 
 function About() {

@@ -8,7 +8,7 @@ function Contact() {
       <div className="contact-content">
         <div className="contact-info">
           <p>jared.brayton.bollenbacher@gmail.com</p>
-          <p>brayton.cgmc.com</p>
+          <p>brayton@cgmc.com</p>
           <a href="https://www.cgmc.com/" target="_blank" rel="noopener noreferrer">
             <p style={{ margin: 0}}>
               Columbus Gay Men's Chorus
