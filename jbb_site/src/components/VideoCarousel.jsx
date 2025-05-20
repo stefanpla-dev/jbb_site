@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/VideoCarousel.css'
+import '../styles/Button.css';
 
 const videos = [
     {
@@ -87,17 +88,6 @@ function VideoCarousel() {
 
   return (
     <div className="video-carousel-wrapper">
-      <div className="video-jump-buttons">
-        {videos.map((video, index) =>(
-          <button
-            key={index}
-            className={`jump-button ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => setCurrentIndex(index)}
-          >
-          {video.title}
-          </button>
-        ))}
-      </div>
         <div className="video-strip">
             {/* Previous video*/}
             <div className="video-shadow left-shadow" onClick={goToPrevious}>
@@ -134,8 +124,21 @@ function VideoCarousel() {
                 />
             </div>
         </div>
+      <div className="video-jump-buttons">
+        {videos.map((video, index) =>(
+          <button
+            key={index}
+            className={`jump-button ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          >
+          {video.title}
+          </button>
+        ))}
+      </div>
     </div>
   )
 }
 
 export default VideoCarousel
+
+
