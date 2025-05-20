@@ -1,21 +1,12 @@
 .video-carousel-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
     padding: 2rem;
     background-color: rgb(183, 27, 154);
-    flex-wrap: wrap;
-}
-
-.arrow {
-    font-size: 2rem;
-    background: #fb4bdb;
-    border: none;
-    cursor: pointer;
-    user-select: none;
-    color: #eeeeee;
 }
 
 .video-container {
@@ -35,5 +26,77 @@
 .video-title {
     text-align: center;
     margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.video-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.video-shadow {
+    width: 240px;
+    height: 135px;
+    opacity: 0.4;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-shadow iframe {
+    width: 100%;
+    height: 100%;
+    filter: blur(1px) brightness(0.9);
+}
+
+.video-shadow:hover {
+    transform: scale(1);
+    opacity: 0.75;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.left-shadow {
+    margin-right: 2rem;
+}
+
+.right-shadow {
+    margin-left: 2rem;
+}
+
+.video-jump-buttons {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px,1fr));
+    gap: 0.8rem 1rem;
+    max-width: 1300px;
+    justify-content: center;
+}
+
+.jump button {
+    background-color: #eeeeee;
+    color: #333;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.jump-button:hover {
+    background-color: #fb4bdb;
+    color: white;
+}
+
+.jump-button.active {
+    background-color: #9b1c84;
+    color: white;
     font-weight: bold;
 }
