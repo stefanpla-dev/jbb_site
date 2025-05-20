@@ -68,35 +68,72 @@ function VideoCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [slideDirection, setSlideDirection] = useState('none');
 
+    const prevIndex = (currentIndex - 1 + videos.length) % videos.length;
+    const nextIndex = (currentIndex + 1) % videos.length;
+
     const goToPrevious = () => {
         setSlideDirection('left');
         setTimeout(() => {
-            setCurrentIndex((prev) => (prev === 0 ? videos.length -1 : prev -1));
+            setCurrentIndex(prevIndex);
         }, 200);
     };
 
     const goToNext = () => {
         setSlideDirection('right');
         setTimeout(() => {
-            setCurrentIndex ((prev) => (prev === videos.length -1 ? 0 : prev + 1));
+            setCurrentIndex (nextIndex);
         }, 200);
     };
 
   return (
     <div className="video-carousel-wrapper">
-        <button onClick={goToPrevious} className="arrow left">←</button>
-        <div className={`video-container slide-${slideDirection}`}>
-            <iframe 
+      <div className="video-jump-buttons">
+        {videos.map((video, index) =>(
+          <button
+            key={index}
+            className={`jump-button ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          >
+          {video.title}
+          </button>
+        ))}
+      </div>
+        <div className="video-strip">
+            {/* Previous video*/}
+            <div className="video-shadow left-shadow" onClick={goToPrevious}>
+              <iframe
+                src={getEmbedUrl(videos[prevIndex].url)}
+                title={videos[prevIndex].title}
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                allowFullScreen 
+                />
+            </div>
+
+            {/*Main (active) video */}
+            <div className={`video-container slide-${slideDirection}`}>
+              <p className="video-title">{videos[currentIndex].title}</p>
+              <iframe
                 key={videos[currentIndex].url}
                 src={getEmbedUrl(videos[currentIndex].url)}
                 title={videos[currentIndex].title}
                 frameBorder="0"
                 allow="autoplay; fullscreen"
-                allowFullScreen 
-            />
-            <p className="video-title">{videos[currentIndex].title}</p>
+                allowFullScreen
+                />
+            </div>
+
+            {/*Next video*/}
+            <div className="video-shadow right-shadow" onClick={goToNext}>
+              <iframe 
+                src={getEmbedUrl(videos[nextIndex].url)}
+                title={videos[nextIndex].title}
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                />
+            </div>
         </div>
-        <button onClick={goToNext} className="arrow right">→</button>
     </div>
   )
 }
