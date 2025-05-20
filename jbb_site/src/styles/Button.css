@@ -2,7 +2,7 @@ button {
     --bg: #262626;
     --text-color: #fff;
     position: relative;
-    width: 200px;
+    width: 180px;
     border: none;
     background: var(--bg);
     color: var(--text-color);

@@ -10,9 +10,9 @@ function Resume() {
 
 
   return (
-    <section className="resume-section">
+    <section className="resume-section" id="resume">
         <div className="resume-toggle">
-            <button onClick={toggleResume} style={{ width: '500px', fontSize: '1.2rem' }}>
+            <button onClick={toggleResume} style={{ width: '500px', height: '50px', fontSize: '1.1rem' }}>
                 {isExpanded ? '↑ Hide Resume ↑' : '↓ Click here for my full resume ↓'}
             </button>
         </div>

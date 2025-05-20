@@ -4,7 +4,7 @@ import '../styles/Section.css';
 
 function Videos() {
   return (
-    <section className="section videos">
+    <section className="section videos" id="videos">
         <VideoCarousel />
     </section>
   )
