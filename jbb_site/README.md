@@ -1,12 +1,50 @@
-# React + Vite
+# Brayton's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Brayton Bollenbacher's portfolio website, developed by Stefan Pla! This site was built to showcase Brayton's work, projects, and background in a clean, interactive, and responsive format.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Built With
 
-## Expanding the ESLint configuration
+- **React** – Front-end framework
+- **CSS Modules** – Custom styling
+- **Vite** – Fast bundler and dev server
+- **Netlify / Vercel** – Hosting and CI/CD deployment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+src/
+├── assets/ # Images and static files
+├── components/ # Reusable components
+├── sections/ # Page sections (About, Resume, Videos, Contact)
+├── styles/ # CSS styles
+├── App.jsx # Main component
+└── main.jsx # Entry point
+
+---
+
+## ✨ Features
+
+- Smooth, single-page layout
+- Embedded YouTube/Vimeo video carousel
+- Toggleable resume section
+- Responsive design
+- Section jump buttons for easy navigation
+- Fully custom CSS — no templates
+
+---
+
+## 👤 Author
+
+**Stefan**  
+_Web Developer, Software Engineer_
+
+If you're viewing the site and want to get in touch — feel free to [contact me](mailto:spla@icloud.com).
+
+---
+
+## 🧾 License
+
+This project is for personal and portfolio purposes. Do not reuse content (photos, videos, or resume) without permission.
