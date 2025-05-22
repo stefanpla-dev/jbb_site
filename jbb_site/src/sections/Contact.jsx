@@ -18,6 +18,9 @@ function Contact() {
         <div className="contact-carousel-wrapper">
           <ContactCarousel />
         </div>
+        <footer className="site-footer">
+          <p>Developed by Stefan Pla © 2025</p>
+        </footer>
       </div>
     </section>
   )

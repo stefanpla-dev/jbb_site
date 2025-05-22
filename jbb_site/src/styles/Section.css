@@ -19,10 +19,9 @@
 
 .signature-img {
     position: absolute;
-    top: 10vh;
     left: 50%;
     transform: translateX(-50%);
-    height: 30vh;
+    height: 45vh;
     pointer-events: none;
     opacity: 0;
     animation: fadeIn 3s ease-out 0.5s forwards;
@@ -224,3 +223,11 @@
     align-items: center;
     padding-left: 2rem;
   }
+
+.site-footer {
+    font-size: 0.9rem;
+    color: #000000;
+    padding: 1rem;
+    margin-top: 30rem;
+    position: absolute;
+}

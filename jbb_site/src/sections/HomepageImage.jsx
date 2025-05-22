@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Section.css';
 import image from '../assets/landing-page-image.jpg';
-import signatureImage from '../assets/brayton-signature.jpg';
+import signatureImage from '../assets/aqua.png';
 
 function HomepageImage() {
   return (
