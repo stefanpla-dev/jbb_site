@@ -1,10 +1,10 @@
 # Brayton's Portfolio Website
 
-Welcome to Brayton Bollenbacher's portfolio website, developed by Stefan Pla! This site was built to showcase Brayton's work, projects, and background in a clean, interactive, and responsive format.
+Welcome to Brayton Bollenbacher's portfolio website, developed by Stefan Pla. This site was built to showcase Brayton's work, performances, and background in an interactive and responsive format.
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - **React** – Front-end framework
 - **CSS Modules** – Custom styling
@@ -13,7 +13,7 @@ Welcome to Brayton Bollenbacher's portfolio website, developed by Stefan Pla! Th
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 src/
 ├── assets/ # Images and static files
@@ -25,7 +25,7 @@ src/
 
 ---
 
-## ✨ Features
+## Features
 
 - Smooth, single-page layout
 - Embedded YouTube/Vimeo video carousel
@@ -36,15 +36,15 @@ src/
 
 ---
 
-## 👤 Author
+## Author
 
 **Stefan**  
 _Web Developer, Software Engineer_
 
-If you're viewing the site and want to get in touch — feel free to [contact me](mailto:spla@icloud.com).
+If you're viewing the site and want to get in touch — feel free to [contact me](mailto:spla@icloud.com) or [checkout my GitHub](https://github.com/stefanpla-dev).
 
 ---
 
-## 🧾 License
+## License
 
-This project is for personal and portfolio purposes. Do not reuse content (photos, videos, or resume) without permission.
+This project is for personal and portfolio purposes. Do not reuse content (photos, videos, text or resume) without permission.
