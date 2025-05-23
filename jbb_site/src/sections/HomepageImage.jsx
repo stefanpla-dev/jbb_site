@@ -1,6 +1,6 @@
 import React from 'react'
 import 'src/styles/Section.css';
-import image from 'src/assets/landing-page-image.jpg';
+import image from '../assets/landing-page-image.jpg';
 import signatureImage from 'src/assets/aqua.png';
 
 function HomepageImage() {
