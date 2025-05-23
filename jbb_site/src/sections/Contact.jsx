@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactCarousel from '../components/ContactCarousel';
-import '../styles/Section.css';
+import 'src/styles/Section.css';
 
 function Contact() {
   return (

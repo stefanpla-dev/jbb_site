@@ -1,6 +1,6 @@
 import React from 'react'
 import VideoCarousel from '../components/VideoCarousel';
-import '../styles/Section.css';
+import 'src/styles/Section.css';
 
 function Videos() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/Section.css';
-import image from '../assets/landing-page-image.jpg';
-import signatureImage from '../assets/aqua.png';
+import 'src/styles/Section.css';
+import image from 'src/assets/landing-page-image.jpg';
+import signatureImage from 'src/assets/aqua.png';
 
 function HomepageImage() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import '../styles/VideoCarousel.css'
-import '../styles/Button.css';
+import 'src/styles/VideoCarousel.css'
+import 'src/styles/Button.css';
 
 const videos = [
     {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Section.css';
+import 'src/styles/Section.css';
 
 function Resume() {
     const [isExpanded, setIsExpanded] = useState(false);

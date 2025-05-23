@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import img1 from '../assets/contact-1.jpg';
-import img2 from '../assets/contact-2.jpg';
-import img3 from '../assets/contact-3.jpg';
-import img4 from '../assets/contact-4.jpg';
-import img5 from '../assets/contact-5.jpg';
-import img6 from '../assets/contact-6.jpg';
-import img7 from '../assets/contact-7.jpg';
-import img8 from '../assets/contact-8.jpg';
-import img9 from '../assets/contact-9.jpg';
-import '../styles/ContactCarousel.css';
+import img1 from 'src/assets/contact-1.jpg';
+import img2 from 'src/assets/contact-2.jpg';
+import img3 from 'src/assets/contact-3.jpg';
+import img4 from 'src/assets/contact-4.jpg';
+import img5 from 'src/assets/contact-5.jpg';
+import img6 from 'src/assets/contact-6.jpg';
+import img7 from 'src/assets/contact-7.jpg';
+import img8 from 'src/assets/contact-8.jpg';
+import img9 from 'src/assets/contact-9.jpg';
+import 'src/styles/ContactCarousel.css';
 
 const images = [
     {src: img1, title: "BANNED - Columbus Gay Men's Chorus"},

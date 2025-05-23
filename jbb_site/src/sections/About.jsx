@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Section.css';
+import 'src/styles/Section.css';
 import ImageCarousel from '../components/ImageCarousel';
 
 function About() {
